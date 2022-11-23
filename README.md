@@ -1,6 +1,6 @@
 # SDET boilerplate
 
-abstract: Provides a simple repository containing basic end-to-end test boiler plate for lempire SDET exercices.
+abstract: Provides a simple repository containing basic end-to-end test boiler plate for lempire SDET exercises.
 
 Intent:
 
@@ -11,7 +11,7 @@ Environment:
 
 - Requires a npm/node working environment
 - Requires a useable internet connection
-- Lempire uses macos hardware for Tech environment, hence this npm project tailored for this, but you might use any platform/OS at your disposable for the purpose of this test. You only really need a running Cypress app.
+- Lempire uses macos as Tech environment, hence this npm project tailored for this, but you might use any platform/OS at your disposable for the purpose of this test. You only really need a running Cypress app.
 
 ## Content of this repository
 
