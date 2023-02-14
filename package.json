@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'use E2E Testing' && cypress open"
+    "test": "npx playwright test"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,7 @@
   "homepage": "https://github.com/l3mpire/sdet-boilerplate#readme",
   "dependencies": {},
   "devDependencies": {
-    "cypress": "^11.2.0",
-    "cypress-otp": "^1.0.3",
-    "cypress-wait-until": "^1.7.2"
+    "@playwright/test": "^1.30.0",
+    "playwright-expect": "^0.1.2"
   }
 }

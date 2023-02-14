@@ -11,36 +11,38 @@ Environment:
 
 - Requires a npm/node working environment
 - Requires a useable internet connection
-- Lempire uses macos as Tech environment, hence this npm project tailored for this, but you might use any platform/OS at your disposable for the purpose of this test. You only really need a running Cypress app.
+- Lempire uses macos as Tech environment, hence this npm project tailored for this, but you might use any platform/OS at your disposable for the purpose of this test.
 
 ## Content of this repository
 
 This git repository provides:
 
-- an NPM project which installs Cypress,
+- an NPM project which installs playwright,
 - some basic .js test files.
 
-We use Cypress (https://www.cypress.io/) as our main e2e test tool. This works fine and is very customizable.
+We use Playwright (https://playwright.dev//) as our main e2e test tool. This works fine and is very customizable.
+Playwright intro is here: https://playwright.dev/docs/intro
 
-## Install procedure
 
-First install npm dependencies
+## Install procedure of this little project
+
+First install npm dependencies (install playwright)
 
 `npm install`
 
-then run cypress using
+Install playwright (which install some browsers)
 
-`npm test`
+`npx playwright install`
 
-This will launches Cypress e2e windowed app.
+Then run the test framework using
+
+`npm run test`
+
+This will launches playwright in command line mode.
 
 ## Running your test suite
 
-1. You might want to select "E2E Testing", as cypress doesn't provide component testing for Blaze.
-2. You might want to select "Chrome" as a browser, which is our primary target, and works fine with cypress.
-3. You might want to select e2e-create-account.cy.js file
-
-Cypress should now run this very simple test suite against staging.lemlist.com.
+playwright should now run this very simple test suite against staging.lemlist.com.
 This is our staging playground, so what happens there doesn't matter too much ;)
 
 For this test, we'd like you to challenge the login screen, the first few account creation screens, what you deem appropriate. You can now work your magic, you should probably be in known territory by now.
