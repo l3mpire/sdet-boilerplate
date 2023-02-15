@@ -20,7 +20,7 @@ This git repository provides:
 - an NPM project which installs playwright,
 - some basic .js test files.
 
-We use Playwright (https://playwright.dev//) as our main e2e test tool. This works fine and is very customizable.
+We use Playwright (https://playwright.dev/) as our main e2e test tool. This works fine and is very customizable.
 Playwright intro is here: https://playwright.dev/docs/intro
 
 
