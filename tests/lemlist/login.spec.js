@@ -5,7 +5,7 @@ const { LoginPage } = require('./login.page');
 // eslint-disable-next-line import/no-extraneous-dependencies
 
 test.describe('lemlist login', () => {
-  test.use({ baseURL: 'https://staging.lemlist.com' });
+  test.use({ baseURL: 'https://app.lemlist.com' });
   test.use({ storageState: { cookies: [], origins: [] } });
 
   test.beforeEach(({ page }) => {
@@ -23,5 +23,17 @@ test.describe('lemlist login', () => {
     // bad email
     await loginPage.login('bademail@email.com');
     await expect(loginPage.alertMessage).toContainText('no account exists');
+  });
+
+  test.skip('LOG_01: should allow login with correct email /password', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+
+    // good input
+    await loginPage.goto();
+    await loginPage.login('dev.ci.lempire@gmail.com')
+
+    // bad email
+    await loginPage.login('-------')
+    await expect(this.page).toHaveURL(/.*tea_.*/);
   });
 });

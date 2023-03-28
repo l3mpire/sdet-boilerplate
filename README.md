@@ -23,7 +23,6 @@ This git repository provides:
 We use Playwright (https://playwright.dev/) as our main e2e test tool. This works fine and is very customizable.
 Playwright intro is here: https://playwright.dev/docs/intro
 
-
 ## Install procedure of this little project
 
 First install npm dependencies (install playwright)
@@ -42,7 +41,6 @@ This will launches playwright in command line mode.
 
 ## Running your test suite
 
-playwright should now run this very simple test suite against staging.lemlist.com.
-This is our staging playground, so what happens there doesn't matter too much ;)
+playwright should now run this very simple test suite against https://app.lemlist.com (en compte trial)
 
 For this test, we'd like you to challenge the login screen, the first few account creation screens, what you deem appropriate. You can now work your magic, you should probably be in known territory by now.
