@@ -43,4 +43,11 @@ This will launches playwright in command line mode.
 
 playwright should now run this very simple test suite against https://app.lemlist.com (en compte trial)
 
-For this test, we'd like you to challenge the login screen, the first few account creation screens, what you deem appropriate. You can now work your magic, you should probably be in known territory by now.
+For this test, we'd like you to challenge the "Account settings" modal window.
+[located here](./account-settings-modal.png)
+
+It's located in top right on the main dashboard. You'll find several fields than be tested: name, firstName, among others, what you deem appropriate to test.
+
+You'll need to first create an account, you can use the trial plan for this.
+
+You can now work your magic, you should probably be in known territory by now, have fun.
